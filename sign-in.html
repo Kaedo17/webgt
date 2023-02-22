@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign In Form</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="form-container signin-container">
+  	<form class="form-sign-in" method="post" action="signin.php" onsubmit="return validateForm()">
+  		<h2 class="form-title">Sign In</h2>
+  		<label class="form-label" for="name">Name</label>
+  		<input class="form-input" type="text" id="name" name="name" placeholder="Enter your name" required>
+  		<label class="form-label" for="email">Email Address</label>
+  		<input class="form-input" type="email" id="email" name="email" placeholder="Enter your email address" required>
+  		<label class="form-label" for="password">Password</label>
+  		<input class="form-input" type="password" id="password" name="password" placeholder="Enter your password" required>
+  		<button class="form-button" type="submit">Sign In</button>
+  	</form>
+  </div>
+  	<script src="app.js"></script>
+</body>
+</html>

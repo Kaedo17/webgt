@@ -1,0 +1,160 @@
+/* Styles for both login and sign-in forms */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+a {
+  text-decoration: none;
+  color: #4CAF50;
+}
+
+/* Styles for login form */
+.login-container {
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 400px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.login-container h2 {
+  text-align: center;
+}
+
+.login-container p {
+  margin-top: 20px;
+}
+
+/* Styles for sign-in form */
+.signin-container {
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 400px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.signin-container h2 {
+  text-align: center;
+}
+
+.signin-container p {
+  margin-top: 20px;
+}
+
+/* Input box style */
+.form-input {
+  background-color: #f5f5f5;
+  border: none;
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+.form-input:focus {
+  outline: none;
+  border: 2px solid #2ecc71;
+}
+Here's how you can use this style in the login and sign-in HTML codes:
+
+For the Sign In HTML code:
+
+html
+Copy code
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign In Form</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="form-container signin-container">
+  	<form class="form-sign-in" onsubmit="return validateForm()">
+  		<h2 class="form-title">Sign In</h2>
+  		<label class="form-label" for="name">Name</label>
+  		<input class="form-input" type="text" id="name" name="name" placeholder="Enter your name" required>
+  		<label class="form-label" for="email">Email Address</label>
+  		<input class="form-input" type="email" id="email" name="email" placeholder="Enter your email address" required>
+  		<label class="form-label" for="password">Password</label>
+  		<input class="form-input" type="password" id="password" name="password" placeholder="Enter your password" required>
+  		<button class="form-button" type="submit">Sign In</button>
+  	</form>
+  </div>
+  	<script src="app.js"></script>
+</body>
+</html>
+For the Login HTML code:
+
+html
+Copy code
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Login and Sign-in Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="form-container login-container">
+    <h2>Login</h2>
+    <form action="" method="post">
+      <label for="email">Email</label>
+      <input class="form-input" type="email" name="email" id="email" required>
+      <label for="password">Password</label>
+      <input class="form-input" type="password" name="password" id="password" required>
+      <button class="form-button" type="submit">Login</button>
+    </form>
+    <p>Don't have an account? <a href="sign-in.html">Sign up</a></p>
+  </div>
+</body>
+</html>
+
+
+
+
+
+ChatGPT Feb 13 Version. Free Research Preview. Our goal is to make AI syst
